@@ -1,0 +1,54 @@
+.three{
+  &-container{
+    width: 100%;
+    max-width:1140px;
+    padding-right:var(--gutter);
+    padding-left:var(--gutter);
+    margin-right:auto;
+    margin-left:auto;
+    text-align: center;
+    img{
+      margin-top:50px;
+    }
+    h2{
+      width:24%;
+      margin-right: auto;
+      margin-left:auto;
+    }
+    p{
+      width:50%;
+      margin-right:auto;
+      margin-left:auto;
+    }
+  }
+  @include max-width(md){
+    &-container{
+      h2{
+        width:100%;
+      }
+      p{
+        width:100%;
+      }
+    }
+  }
+}
+
+// Four Scss
+
+.four{
+  padding-top:50px;
+  padding-bottom:50px;
+  &-container{
+    width:100%;
+    max-width:1140px;
+    padding-right:var(--gutter);
+    padding-left:var(--gutter);
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top:25px;
+    padding-bottom:25px;
+    background-color:#f1f1f1;
+    border-radius:10px;
+  }
+}

@@ -1,0 +1,139 @@
+.five{
+  padding-top:30px;
+  padding-bottom:50px;
+  h2{
+    width:30%;
+    margin-right: auto;
+    margin-left:auto;
+    text-align: center;
+  }
+  &-text{
+    width:50%;
+    margin-right: auto;
+    margin-left:auto;
+    text-align: center;
+  }
+  &-container{
+    width:100%;
+    max-width:1140px;
+    margin-right:auto;
+    margin-left:auto;
+    padding-right:var(--gutter);
+    padding-left:var(--gutter);
+  }
+  .swiper-container{
+    margin-top: 30px;
+    height:300px;
+  }
+  .card{
+    height: 250px;
+    border: 1px solid var(--orange);
+    border-radius:10px;
+    padding:var(--gutter);
+    &-body{
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+    }
+    &-item{
+      display: flex;
+      align-items: center;
+    }
+    &-text{
+      margin-right:5px;
+    }
+    img{
+      margin-right:20px;
+      &:last-child{
+        margin:0;
+      }
+    }
+    &-bold{
+      font-size:18px;
+      font-weight: var(--medium);
+    }
+    &-small{
+      font-size:14px;
+      font-weight:var(--regular);
+      color:var(--grayish-navy)
+    }
+  }
+  @include max-width(md){
+    h2{
+      width:100%;
+    }
+    &-text{
+      width:100%;
+    }
+  }
+}
+
+// Six Scss
+
+.six{
+  padding-top:30px;
+  padding-bottom:30px;
+  &-container{
+    width:100%;
+    max-width:71.25rem;
+    margin-right:auto;
+    margin-left:auto;
+    padding-right:var(--gutter);
+    padding-left: var(--gutter);
+    background-color:#fff;
+    border-radius:10px;
+  }
+  &-body{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+  }
+  &-item{
+    padding-right:var(--gutter);
+    padding-left:var(--gutter);
+    &:nth-child(2){
+      margin-left:auto;
+    }
+    h2{
+      font-size:2.188rem;
+      width:70%;
+    }
+  }
+  &-btn{
+    text-align: center;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width:200px;
+    height:45px;
+    background-color:var(--orange);
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    transition: all .3s ease;
+    &:hover{
+      color:var(--orange);
+      background-color:#fff;
+      border:1px solid var(--orange);
+    }
+  }
+  @include max-width(md){
+    &-body{
+      grid-template-columns:repeat(1,1fr);
+      justify-content: center;
+    }
+    &-item{
+      padding-bottom:var(--gutter);
+      text-align:center;
+      h2{
+        width:100%;
+      }
+      &:nth-child(2){
+        margin:0;
+      }
+    }
+    &-btn{
+      margin-bottom:10px;
+    }
+  }
+}
